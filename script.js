@@ -8,6 +8,8 @@
 const enter = document.querySelector("#enter");
 const input = document.querySelector("#new-todo");
 const list = document.getElementById("list");
+const showDate = document.getElementById("show-date")
+const dateText = document.getElementById("date");
 
 //delete botton
 const deleteFun = function(){
@@ -26,6 +28,16 @@ const checkBoxFun = function(event){
 }
 
 enter.addEventListener("click", ()=> {
+        //sample answer
+
+    //     const input = document.getElementById("new-todo").value;
+    //     
+    //List Item
+    // const newListItem = document.createElement("li");
+    //newListItem.
+    //     const deleteButton
+    //     const ul = document.createElement
+
         const newInput = input.value;
         const listItem = document.createElement("li");
         listItem.innerText = newInput;
@@ -47,4 +59,8 @@ enter.addEventListener("click", ()=> {
         checkBox.addEventListener("edit",checkBoxFun);
 
         deleteButton.addEventListener('click',deleteFun);
+})
+
+showDate.addEventListener('click',() => {
+    dateText.innerText = Date();
 })
