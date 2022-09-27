@@ -7,7 +7,7 @@
 
 const enter = document.querySelector("#enter");
 const input = document.querySelector("#new-todo");
-const list = document.getElementById("#list");
+const list = document.getElementById("list");
 
 //delete botton
 const deleteFun = function(){
@@ -25,7 +25,7 @@ const checkBoxFun = function(event){
     }
 }
 
-button.addEventListener("click", ()=> {
+enter.addEventListener("click", ()=> {
         const newInput = input.value;
         const listItem = document.createElement("li");
         listItem.innerText = newInput;
